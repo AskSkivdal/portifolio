@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+:root {
+  --main-background-color: #33333a;
+  --secondary-background-color: #1e1e20;
+  --footer-color: #373738;
+  --navbar-color: #26262e;
+  --primary-color: #2bc96d;
+  --secondary-color: #5fb619;
+  --text-color: #ffffff;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--secondary-background-color);
+  padding: 0px;
+  margin: 0;
+}
+
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--navbar-color);
+  height: max-content;
+  width: 100%;
+  top: 0px;
+  position: fixed;
+}
+
+#navbar li {
+  display: inline;
+  min-height: 100%;
+  background-color: var(--navbar-color);
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: var(--text-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.4s;
+}
+
+#navbar li a:hover {
+  background-color: var(--secondary-color);
+}
+
+
+
+.container {
+  width: 100%;
+  min-height: 90vh;
+  background-color: var(--main-background-color);
+  margin: auto;
+  max-width: 800px;
+  box-shadow: 0px 0px 67px 21px rgba(0,0,0,0.5);
+}
+
+.container * {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+
+/* 
+Offset the content using 2 invisible horisontal rules
+if the screen is to small to fit the entire navbar.
+*/
+@media only screen and (min-width: 456px) {
+  .small-screen {
+    display: none;
+  }
+}
+
+.list {
+  padding-left: 30px;
+}
+
+#footer {
+  position: absolute;
+  min-height: 10vh;
+  height: fit-content;
+  left: 0px;
+  width: 100%;
+  background-color: var(--footer-color);
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+p {
+  font-size: medium;
+}
+
+.infotable {
+  width: 100%;
+}
+
+.formtable {
+  width: 100%;
+  table-layout:auto;
+
+}
+
+.current {
+  background-color: var(--primary-color) !important;
+  text-decoration: underline;
+}
+
+.full-width-button {
+  width: 100%;
+}
+
+.footerlink {
+  color: var(--primary-color);
+}
+
+.footerlink:hover {
+  color: var(--secondary-color);
+}
+
+#profilepic {
+  width: 200px;
+  float: right;
+}

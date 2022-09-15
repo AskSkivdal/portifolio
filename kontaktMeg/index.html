@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/css/master.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kontakt Ask Skivdal" />
+    <link rel="icon" href="/favicon.svg"></link>
+    <script src="contact_me.js"></script>
+    <title>Kontakt meg</title>
+  </head>
+  <body>
+    <ul id="navbar">
+      <li><a href="/">Hjem</a></li>
+      <li><a href="/arbeidserfaring">Arbeidserfaring</a></li>
+      <li><a href="/utdanning">Utdanning</a></li>
+      <li class="current"><a href="/kontaktMeg">Kontakt meg</a></li>
+    </ul>
+
+    <!-- offset for navbar -->
+    <br />
+    <br />
+    <br class="small-screen" />
+    <br class="small-screen" />
+
+    <div class="container">
+      <br />
+      <center>
+        <h1>Kontakt meg</h1>
+      </center>
+      <form action="mailto:askski@viken.no" method="post" enctype="text/plain">
+        <table class="formtable">
+          <tr>
+            <th>
+              <label for="email">Epost</label>
+            </th>
+            <td>
+              <input type="email" name="email" id="email" style="width: 100%" />
+            </td>
+          </tr>
+          <tr>
+            <th>
+              <label for="subject">Navn</label>
+            </th>
+            <td>
+              <input
+                type="text"
+                name="subject"
+                id="name"
+                style="width: 100%"
+                pattern="^([A-å]| )+"
+              />
+            </td>
+          </tr>
+          <tr>
+            <th><label for="body">Melding</label></th>
+            <td>
+              <textarea
+                name="body"
+                id="message"
+                cols="32"
+                rows="12"
+                style="width: 100%; resize: none"
+              ></textarea>
+            </td>
+          </tr>
+        </table>
+
+        <center>
+          <input
+            class="full-width-button"
+            type="button"
+            value="Send meg Melding"
+            id="submit"
+            onclick="formSubmit();"/>
+          <input class="full-width-button" type="submit" value="Send meg en Epost">
+
+        </center>
+      </form>
+      <p><span id="response"></span></p>
+    </div>
+    <div id="footer">
+      <p>&copy; 2022 - Ask Skivdal</p>
+      <p>Email <a href="mailto:ask.skivdal@gmail.com" class="footerlink">ask.skivdal@gmail.com</a></p>
+      <p><a href="/kontaktMeg/" class="footerlink">Kontakt meg</a></p>
+    </div>
+  </body>
+</html>
