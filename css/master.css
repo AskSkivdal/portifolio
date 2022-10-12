@@ -10,17 +10,6 @@
   --text-color: #ffffff;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  color: var(--text-color);
-  background-color: var(--secondary-background-color);
-  padding: 0px;
-  margin: 0;
-}
-
 #navbar {
   list-style-type: none;
   margin: 0;
@@ -52,7 +41,20 @@ body {
   background-color: var(--secondary-color);
 }
 
+#footer {
+  position: absolute;
+  min-height: 10vh;
+  height: fit-content;
+  left: 0px;
+  width: 100%;
+  background-color: var(--footer-color);
+  text-align: center;
+}
 
+#profilepic {
+  width: 200px;
+  float: right;
+}
 
 .container {
   width: 100%;
@@ -60,15 +62,13 @@ body {
   background-color: var(--main-background-color);
   margin: auto;
   max-width: 800px;
-  box-shadow: 0px 0px 67px 21px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 67px 21px rgba(0, 0, 0, 0.5);
 }
 
 .container * {
   padding-left: 10px;
   padding-right: 10px;
 }
-
-
 
 /* 
 Offset the content using 2 invisible horisontal rules
@@ -84,16 +84,6 @@ if the screen is to small to fit the entire navbar.
   padding-left: 30px;
 }
 
-#footer {
-  position: absolute;
-  min-height: 10vh;
-  height: fit-content;
-  left: 0px;
-  width: 100%;
-  background-color: var(--footer-color);
-  text-align: center;
-}
-
 .title {
   text-align: center;
 }
@@ -102,18 +92,13 @@ if the screen is to small to fit the entire navbar.
   text-decoration: underline;
 }
 
-p {
-  font-size: medium;
-}
-
 .infotable {
   width: 100%;
 }
 
 .formtable {
   width: 100%;
-  table-layout:auto;
-
+  table-layout: auto;
 }
 
 .current {
@@ -133,7 +118,17 @@ p {
   color: var(--secondary-color);
 }
 
-#profilepic {
-  width: 200px;
-  float: right;
+body {
+  color: var(--text-color);
+  background-color: var(--secondary-background-color);
+  padding: 0px;
+  margin: 0;
+}
+
+p {
+  font-size: medium;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
 }
